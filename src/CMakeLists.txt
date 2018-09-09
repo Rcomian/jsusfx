@@ -53,5 +53,7 @@ else()
 	endif()
 endif()
 
+add_definitions(-fPIC)
+
 target_compile_definitions(jsusfx PUBLIC WDL_FFT_REALSIZE=8)
 target_include_directories(jsusfx PUBLIC "${PROJECT_SOURCE_DIR}")
